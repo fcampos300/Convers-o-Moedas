@@ -35,3 +35,9 @@ Instalação:<br>
 Passo 3 - Clonar ou fazer download do repositório.<br>
 Com o ambiente preparado e o serviço baixado, é só digitar o comando abaixo no terminal para rodar o aplicativo.
 <pre>python converte.py</pre>
+<br>
+Em caso de algum problema/dúvida com as outras bibliotecas utilizadas pelo serviço, elas podem ser encontradas nos seguintes links:<br>
+tkinter: https://tkdocs.com/tutorial/install.html<br>
+datetime: https://pypi.org/project/DateTime/<br>
+json: https://pypi.org/project/jsonlib-python3/<br>
+os: https://pypi.org/project/os-sys/<br>
