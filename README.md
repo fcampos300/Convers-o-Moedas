@@ -22,5 +22,11 @@ Primeiramente, o usuário precisa informar os dados para o serviço, preenchendo
 Depois que o usuário preenche/seleciona todos os campos, o serviço envia a requisição para uma fila, que responde de acordo com a posição da requisição em relação as outras requisições e a prioridade selecionada. Quando chega o momento de atender a requisição do usuário, o gerenciador da fila chama o gerenciador da API que procura no gerenciador de cache uma solicitação com os mesmos parâmetros da consulta. Se o Gerenciador de cache não achar um registro correspondente, ele responde que nada foi encontrado e o gerenciador da API faz uma requisição online para a API do Banco Central do Brasil, passando os dados preenchidos/selecionados pelo usuário, e obtendo como retorno os dados de conversão das moedas. De posse dos dados, o gerenciador da API cria um arquivo de cache para a consulta e devolve os dados convertidos para o gerenciador da fila, que devolve o resultado convertido para o usuário final.
 <br><br>
 Todo esse processo pode ser visualizado pelo diagrama abaixo:
-<br>
+<br><br>
 <img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/Diagrama.png?raw=true" alt="Diagrama.png">
+<br><br>
+<b>Instalação</b><br>
+Como o serviço foi desenvolvido utilizando a linguagem Python 3.7+, o primeiro passo para configuração do ambiente é instalar o Python, caso não esteja instalado. Para isso, basta ir em https://www.python.org/downloads/ e baixar a última versão correspondente ao OS utilizado.
+<br><br>
+Após a instalação do Python, é necessário instalar algumas bibliotecas utilizadas pelo serviço. As bibliotecas são:
+
