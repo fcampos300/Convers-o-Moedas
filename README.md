@@ -59,3 +59,9 @@ Para esse case, foi desenvolvido um gerenciador simples, onde o próprio aplicat
 Sistema simples de cache em arquivo em disco. No case, a limpeza dos arquivos com mais de 30 minutos de geração é feito dentro do próprio aplicativo, porém, o ideal é agendar um serviço para realizar essa limpeza periodicamente. 
 <br><br>
 O sistema foi desenvolvido respeitando a premissa, porém, analisando com mais calma, o ideal seria fazer o cache das cotações e guardar por 30 minutos, e não da consulta em si. Por exemplo, na conversão de 1000 USD pra EUR, o sistema deveria guardar as cotações do USD e do EUR para usar em novas consultas por essas moedas, indiferente da quantia desejada.
+<br><br>
+<b>Caso de Uso</b><br>
+Utilização da solução realizada no ambiente Windows 10.
+<br><br>
+Entrada de parâmetros:<br>
+<img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/tela1.jpg?raw=true" alt="tela1.jpg">
