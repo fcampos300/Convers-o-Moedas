@@ -45,7 +45,9 @@ os: https://pypi.org/project/os-sys/<br>
 <b>API</b><br>
 A API utilizada para buscar a conversão é disponibilizada pelo Banco Central do Brasil e pode ser encontrada no link 
 https://dadosabertos.bcb.gov.br/dataset/taxas-de-cambio-todos-os-boletins-diarios/resource/9d07b9dc-c2bc-47ca-af92-10b18bcd0d69<br>
-Link da documentação: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/documentacao
+Documentação: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/documentacao
 <br><br>
-Ponto de acesso para as moedas: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$format=json&$select=simbolo,nomeFormatado<br>
-Ponto de acesso para as cotações: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda=''&@dataCotacao=''&$top=100&$format=json
+Ponto de acesso para as moedas:<br>
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$format=json&$select=simbolo,nomeFormatado<br>
+Ponto de acesso para as cotações:<br>
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda=''&@dataCotacao=''&$top=100&$format=json
