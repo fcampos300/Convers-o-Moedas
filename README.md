@@ -3,7 +3,7 @@
 <h1>Serviço para Conversão de Moedas</h1>
 A finalidade desse serviço é buscar a taxa de cotação das moedas selecionadas no aplicativo, via API disponibilizada pelo Banco Central do Brasil, na data desejada e realizar a conversão dos valores entre as moedas.
 <br><br>
-<b>Premissas</b>
+<b>Premissa</b>
 <ul>
     <li>Utilizar a API disponibilizada pelo Banco Central do Brasil para realizar a conversão entre as moedas.</li>
     <li>Utilizar sistema de cache para responder as cosultas com os mesmos parâmetros. O tempo de vida do cache é de 30 minutos e não pode ser renovado com novas requisições. O retorno da conversão para o usuário deverá informar se o resultado foi obtido pelo cache ou online.</li>
