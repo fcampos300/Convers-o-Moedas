@@ -10,7 +10,7 @@ A finalidade desse serviço é buscar a taxa de cotação das moedas selecionada
     <li>Utilizar um sistema de fila para o serviço como possibilidade de indicar se a requisição é com prioridade normal ou alta. Requisições com prioridade alta passam a frente das requisições com prioridade normal</li>
 </ul>
 
-<b>Como o serviço funciona?</b>
+<b>Como o serviço funciona?</b><br>
 Primeiramente, o usuário precisa informar os dados para o serviço, preenchendo os seguintes campos:
 <ul>
   <li>Data da Cotação - Data que o usuário deseja buscar a taxa da cotação das moedas. Por padrão, o formato da data é dd/mm/YYYY.</li>
