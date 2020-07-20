@@ -51,3 +51,11 @@ Ponto de acesso para as moedas:<br>
 https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$format=json&$select=simbolo,nomeFormatado<br>
 Ponto de acesso para as cotações:<br>
 https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda=''&@dataCotacao=''&$top=100&$format=json
+<br><br>
+<b>Gerenciador de Fila</b><br>
+Para esse case, foi desenvolvido um gerenciador simples, onde o próprio aplicativo gerencia as solicitações em uma lista Python. Para um sistema implementado, o ideal é um serviço agendado, rodando em real time, gerenciando todas as requisições do serviço via arquivo ou banco de dados. No case, eu tentei simular esse cenário, onde o usuário pode fazer várias solicitações de conversão, inclusive setando prioridade e só após o clique no botão de Processar, as requisições são atendidas.
+<br><br>
+<b>Gerenciador de Cache</b><br>
+Sistema simples de cache em arquivo em disco. No case, a limpeza dos arquivos com mais de 30 minutos de geração é feito dentro do próprio aplicativo, porém, o ideal é agendar um serviço para realizar essa limpeza periodicamente. 
+<br><br>
+O sistema foi desenvolvido respeitando a premissa, porém, analisando com mais calma, o ideal seria fazer o cache das cotações e guardar por 30 minutos, e não da consulta em si. Por exemplo, na conversão de 1000 USD pra EUR, o sistema deveria guardar as cotações do USD e do EUR para usar em novas consultas por essas moedas, indiferente da quantia desejada.
