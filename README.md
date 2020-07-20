@@ -2,7 +2,7 @@
 
 <h1>Serviço para Conversão de Moedas</h1>
 A finalidade desse serviço é buscar a taxa de cotação das moedas selecionadas no aplicativo, via API disponibilizada pelo Banco Central do Brasil, na data desejada e realizar a conversão dos valores entre as moedas.
-<br>
+<br><br>
 <b>Premissas</b>
 <ul>
     <li>Utilizar a API disponibilizada pelo Banco Central do Brasil para realizar a conversão entre as moedas.</li>
@@ -10,8 +10,6 @@ A finalidade desse serviço é buscar a taxa de cotação das moedas selecionada
     <li>Utilizar um sistema de fila para o serviço como possibilidade de indicar se a requisição é com prioridade normal ou alta. Requisições com prioridade alta passam a frente das requisições com prioridade normal</li>
 </ul>
 
-
-<br><br>
 <b>Como o serviço funciona?</b>
 Primeiramente, o usuário precisa informar os dados para o serviço, preenchendo os seguintes campos:
 <ul>
