@@ -28,5 +28,7 @@ Todo esse processo pode ser visualizado pelo diagrama abaixo:
 <b>Instalação</b><br>
 Como o serviço foi desenvolvido utilizando a linguagem Python 3.7+, o primeiro passo para configuração do ambiente é instalar o Python, caso não esteja instalado. Para isso, basta ir em https://www.python.org/downloads/ e baixar a última versão correspondente ao OS utilizado.
 <br><br>
-Após a instalação do Python, é necessário instalar algumas bibliotecas utilizadas pelo serviço. As bibliotecas são:
-
+Após a instalação do Python, também é necessário instalar a biblioteca Requests, para trabalhar com as requisições HTTP nas chamadas da API.<br>
+Referência - https://pypi.org/project/requests/2.7.0/<br>
+Instalação:<br>
+<pre>pip install requests</pre>
