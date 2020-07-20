@@ -26,9 +26,12 @@ Todo esse processo pode ser visualizado pelo diagrama abaixo:
 <img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/Diagrama.png?raw=true" alt="Diagrama.png">
 <br><br>
 <b>Instalação</b><br>
-Como o serviço foi desenvolvido utilizando a linguagem Python 3.7+, o primeiro passo para configuração do ambiente é instalar o Python, caso não esteja instalado. Para isso, basta ir em https://www.python.org/downloads/ e baixar a última versão correspondente ao OS utilizado.
+Passo 1 - Como o serviço foi desenvolvido utilizando a linguagem Python 3.7+, o primeiro passo para configuração do ambiente é instalar o Python, caso não esteja instalado. Para isso, basta ir em https://www.python.org/downloads/ e baixar a última versão correspondente ao OS utilizado.
 <br><br>
-Após a instalação do Python, também é necessário instalar a biblioteca Requests, para trabalhar com as requisições HTTP nas chamadas da API.<br>
+Passo 2 - Após a instalação do Python, também é necessário instalar a biblioteca Requests, para trabalhar com as requisições HTTP nas chamadas da API.<br>
 Referência - https://pypi.org/project/requests/2.7.0/<br>
 Instalação:<br>
 <pre>pip install requests</pre>
+Passo 3 - Clonar ou fazer download do repositório.<br>
+Com o ambiente preparado e o serviço baixado, é só digitar o comando abaixo no terminal para rodar o aplicativo.
+<pre>python converte.py</pre>
