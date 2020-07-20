@@ -36,8 +36,16 @@ Passo 3 - Clonar ou fazer download do repositório.<br>
 Com o ambiente preparado e o serviço baixado, é só digitar o comando abaixo no terminal para rodar o aplicativo.
 <pre>python converte.py</pre>
 <br>
-Em caso de algum problema/dúvida com as outras bibliotecas utilizadas pelo serviço, elas podem ser encontradas nos seguintes links:<br>
+Em caso de algum problema/dúvida com as outras bibliotecas utilizadas pelo serviço na hora da instalação, elas podem ser encontradas nos seguintes links:<br>
 tkinter: https://tkdocs.com/tutorial/install.html<br>
 datetime: https://pypi.org/project/DateTime/<br>
 json: https://pypi.org/project/jsonlib-python3/<br>
 os: https://pypi.org/project/os-sys/<br>
+<br>
+<b>API</b><br>
+A API utilizada para buscar a conversão é disponibilizada pelo Banco Central do Brasil e pode ser encontrada no link 
+https://dadosabertos.bcb.gov.br/dataset/taxas-de-cambio-todos-os-boletins-diarios/resource/9d07b9dc-c2bc-47ca-af92-10b18bcd0d69<br>
+Link da documentação: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/documentacao
+<br><br>
+Ponto de acesso para as moedas: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$format=json&$select=simbolo,nomeFormatado<br>
+Ponto de acesso para as cotações: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda=''&@dataCotacao=''&$top=100&$format=json
