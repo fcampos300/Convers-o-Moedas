@@ -65,11 +65,12 @@ Utilização da solução realizada no ambiente Windows 10.
 <br><br>
 Tela de entrada de parâmetros:<br>
 <img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/tela1.jpg?raw=true" alt="tela1.jpg">
-<br>
+
 Fila de processamento com 1 requisição:<br>
 <img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/tela2.jpg?raw=true" alt="tela2.jpg">
-<br>
+
 Fila de processamento com várias requisições:<br>
 <img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/tela3.jpg?raw=true" alt="tela3.jpg">
+
 Resultado das conversões:<br>
 <img src="https://github.com/fcampos300/Conversao-Moedas/blob/master/tela4.jpg?raw=true" alt="tela4.jpg">
