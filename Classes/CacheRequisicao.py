@@ -6,7 +6,6 @@ import os
 from datetime import datetime
 from os import listdir
 from os.path import isfile, getmtime
-from Tools.scripts.mkreal import join
 
 
 class CacheRequisicao:
@@ -31,7 +30,7 @@ class CacheRequisicao:
         """
         # Varre a pasta cache e retorna o arquivo setado pela variável self._arquivo se ele for encontrado.
         # Ignora subpastas.
-        cache = [arq for arq in listdir(self._path) if isfile(join(self._path, arq)) and arq == self._arquivo]
+        cache = [arq for arq in listdir(self._path) if isfile(self._path + arq) and arq == self._arquivo]
 
         # Se o arquivo for encontrado, verifica se ele ainda é válido. Caso não seja, retorna False.
         if cache:
@@ -44,11 +43,11 @@ class CacheRequisicao:
         Limpa todos os arquivos de cache que não forem mais válidos, ou seja, com mais de 30 minutos de geração.
         :return:
         """
-        arquivos = [arq for arq in listdir(self._path) if isfile(join(self._path, arq))]
+        arquivos = [arq for arq in listdir(self._path) if isfile(self._path + arq)]
 
         for cache in arquivos:
             # Busca a data/hora da última modificação do arquivo, a data/hora corrente e o delta entre as variáveis.
-            ult_modificacao = datetime.fromtimestamp(getmtime(join(self._path, cache)))
+            ult_modificacao = datetime.fromtimestamp(getmtime(self._path + cache))
             data_corrente = datetime.now()
             delta = int((data_corrente - ult_modificacao).total_seconds())
 
@@ -57,6 +56,6 @@ class CacheRequisicao:
             if delta > self.cache_duracao:
                 # Remove o arquivo da pasta Cache.
                 try:
-                    os.remove(join(self._path, cache))
+                    os.remove(self._path + cache)
                 except OSError:
                     pass
