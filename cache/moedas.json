@@ -1,0 +1,45 @@
+{
+   "@odata.context": "https://was-p.bcnet.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata$metadata#Moedas(simbolo,nomeFormatado)",
+   "value": [
+      {
+         "simbolo": "AUD",
+         "nomeFormatado": "Dólar australiano"
+      },
+      {
+         "simbolo": "CAD",
+         "nomeFormatado": "Dólar canadense"
+      },
+      {
+         "simbolo": "CHF",
+         "nomeFormatado": "Franco suíço"
+      },
+      {
+         "simbolo": "DKK",
+         "nomeFormatado": "Coroa dinamarquesa"
+      },
+      {
+         "simbolo": "EUR",
+         "nomeFormatado": "Euro"
+      },
+      {
+         "simbolo": "GBP",
+         "nomeFormatado": "Libra Esterlina"
+      },
+      {
+         "simbolo": "JPY",
+         "nomeFormatado": "Iene"
+      },
+      {
+         "simbolo": "NOK",
+         "nomeFormatado": "Coroa norueguesa"
+      },
+      {
+         "simbolo": "SEK",
+         "nomeFormatado": "Coroa sueca"
+      },
+      {
+         "simbolo": "USD",
+         "nomeFormatado": "Dólar dos Estados Unidos"
+      }
+   ]
+}
